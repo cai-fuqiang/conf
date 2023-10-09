@@ -1,0 +1,23 @@
+{
+    "border": "none",
+    "current_border_width": 0,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1052,
+       "width": 1892,
+       "x": 0,
+       "y": 0
+    },
+    "marks": [],
+    "name": "i3 - ArchWiki — Mozilla Firefox",
+    "percent": 1,
+    "swallows": [
+       {
+        "class": "^firefox$",
+        "instance": "^Navigator$",
+        "machine": "^wang\\-pc$",
+        "window_role": "^browser$"
+       }
+    ],
+    "type": "con"
+}
