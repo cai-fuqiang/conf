@@ -18,8 +18,8 @@ font pango:monospace 8
 #font pango:DejaVu Sans Mono 8
 
 # arandr
-#exec_always --no-startup-id $HOME/.config/.screenlayout/screen_layout.sh
-exec_always --no-startup-id $HOME/.config/.screenlayout/load_layout.sh
+exec_always --no-startup-id $HOME/.config/.screenlayout/screen_layout.sh
+#exec_always --no-startup-id $HOME/.config/.screenlayout/load_layout.sh
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
@@ -126,16 +126,16 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-## set $ws1  "1;  "
-## set $ws2  "2:  "
-## set $ws3  "3:  "
-## set $ws4  "4: ."
-## set $ws5  "5:  "
-## set $ws6  "6:  "
-## set $ws7  "7:  "
-## set $ws8  "8:  "
-## set $ws9  "9: vpn"
-## set $ws10 "0:  "
+#set $ws1  "1;  "
+#set $ws2  "2:  "
+#set $ws3  "3:  "
+#set $ws4  "4: ."
+#set $ws5  "5:  "
+#set $ws6  "6:  "
+#set $ws7  "7:  "
+#set $ws8  "8:  "
+#set $ws9  "9: vpn"
+#set $ws10 "0:  "
 
 set $up k
 set $down j
@@ -212,7 +212,7 @@ bindsym $mod+r mode "resize"
 #        status_command i3status
 #}
 ## polybar
-## exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # fcitx
 exec --no-startup-id fcitx

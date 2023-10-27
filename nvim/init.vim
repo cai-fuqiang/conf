@@ -1,5 +1,5 @@
 call plug#begin('~/.nvim/plugged') 
-Plug 'Yggdroot/LeaderF' 
+Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 Plug 'mileszs/ack.vim' 
 Plug 'preservim/tagbar'
 
@@ -27,7 +27,11 @@ Plug 'folke/which-key.nvim' " optional [for whichkey hints]
 Plug 'nvim-telescope/telescope.nvim' " roptional [for picker='telescope']
 Plug 'ibhagwan/fzf-lua' " optional [for picker='fzf-lua']
 Plug 'nvim-tree/nvim-web-devicons' " optional [for devicons in telescope or fzf]
+Plug 'mhinz/vim-startify'
 
+Plug 'brooth/far.vim'
+
+Plug 'rking/ag.vim'
 call plug#end()
 lua << EOF
   require("cscope_maps").setup()
@@ -161,3 +165,6 @@ let g:translator_default_engines = ['haici']
 
 " 注释颜色
 hi comment ctermfg=6
+
+" leaderF
+let g:Lf_WindowPosition = 'popup'

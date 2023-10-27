@@ -12,12 +12,13 @@ systemctl enable sshd
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # i3
-dnf install alacritty picom rofi flameshot
+dnf install alacritty picom rofi flameshot polybar
 # nvim
 dnf install pip
 pip install pynvim
 dnf install nodejs
 dnf install perl-CPAN cscope
+dnf install python-devel
 
 npm update
 
@@ -56,3 +57,6 @@ dnf install perf
 # gitbook
 npm install gitbook-cli -g
 https://stackoverflow.com/questions/64211386/gitbook-cli-install-error-typeerror-cb-apply-is-not-a-function-inside-graceful
+
+# font
+https://github.com/ryanoasis/nerd-fonts/releases
